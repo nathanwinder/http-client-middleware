@@ -1,0 +1,42 @@
+{
+  "name": "http-client-middleware",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "author": "Nathan Winder",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "jest": "^23.5.0",
+    "ts-jest": "^23.1.4",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.0.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ],
+    "collectCoverage": true,
+    "mapCoverage": true
+  }
+}
